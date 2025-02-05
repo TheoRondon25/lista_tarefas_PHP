@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!--CADASTRO DE NOVA TAREFA-->
+    <div class="container">
+        <h4>Nova Tarefa</h4>
+        <form id="formTarefa">
+            <div class="input-field">
+                <input type="text" id="descricao" name="descricao" required>
+                <label for="descricao">Descrição</label>
+            </div>
+            <div class="input-field">
+                <input type="datetime-local" id="prazo_limite" name="prazo_limite" required>
+                <label class="active" for="prazo_limite">Prazo Limite</label>
+            </div>
+            <div class="input-field">
+                <input type="number" id="responsavel_id" name="responsavel_id" required>
+                <label for="responsavel_id">ID do Responsável</label>
+            </div>
+            <div class="input-field">
+                <select name="prioridade" id="prioridade" required>
+                    <option value="" disabled selected>Escolha a prioridade</option>
+                    <option value="Alta">Alta</option>
+                    <option value="Media">Média</option>
+                    <option value="Baixa">Baixa</option>
+                </select>
+                <label>Prioridade</label>
+            </div>
+            <button type="submit" class="btn waves-effect waves-light">Cadastrar Tarefa</button>
+            
+            <button type="button" id="btnListar" class="btn waves-effect waves-light">Listar Tarefas</button>
+            
+            <div id="listarTarefas" style="margin-top: 20px;"></div>
+        </form>
+        <div id="mensagem" style="margin-top: 20px;"></div>
+    </div>
+    <br>
+    <script SRC="../js/tarefas.js"></script>
+    
+</body>
+</html>
