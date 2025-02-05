@@ -63,6 +63,7 @@ php -S localhost:8000
 Acesse via [http://localhost:8000](http://localhost:8000).
 
 ## Funcionalidades
+- Cadastro de colaboradores
 - Cadastro de novas tarefas
 - Listagem de tarefas
 - Edição de tarefas existentes
@@ -73,5 +74,5 @@ Acesse via [http://localhost:8000](http://localhost:8000).
 - **Problemas com Materialize:** Confirme se os links do CDN estão ativos.
 
 ## Autor
-Desenvolvido por [Seu Nome].
+Desenvolvido por Theo Rondon.
 
